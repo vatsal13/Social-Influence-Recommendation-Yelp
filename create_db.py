@@ -3,7 +3,7 @@ import json
 import pymongo
 
 # Global Variable
-path2file = '/home/ubuntu/yelp'
+path2file = '/home/ubuntu/yelp/'
 user_file = 'yelp_academic_dataset_user.json'
 business_file = 'yelp_academic_dataset_business.json'
 review_file = 'yelp_academic_dataset_review.json'
