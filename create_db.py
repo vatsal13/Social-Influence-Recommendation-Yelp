@@ -3,7 +3,7 @@ import json
 import pymongo
 
 # Global Variable
-path2file = './'
+path2file = '/home/ubuntu/yelp'
 user_file = 'yelp_academic_dataset_user.json'
 business_file = 'yelp_academic_dataset_business.json'
 review_file = 'yelp_academic_dataset_review.json'
@@ -41,7 +41,7 @@ def convertFile2Collection(db, file_name, collection_name):
 				db[collection_name].insert(doc)
 
 def main():
-	file_arr = [review_file]
+	file_arr = [review_file, business_file, user_file]
 	mongo_db_obj = MongoDataBase('yelpdb')
 	db = mongo_db_obj.db
 
