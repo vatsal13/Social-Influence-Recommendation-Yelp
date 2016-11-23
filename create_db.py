@@ -18,11 +18,11 @@ def resetCollection():
 	return reset
 
 def deleteAllDocs(db, collection_name):
+	print 'Resetting - ' + collection_name
 	db[collection_name].delete_many({})
 
 def convertFile2Collection(db, file_name, collection_name):
 	if resetCollection():
-		print 'YES'
 		deleteAllDocs(db, collection_name)
 
 	file = path2file + file_name
